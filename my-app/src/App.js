@@ -24,8 +24,6 @@ function App() {
 
 export default App;
 
-let budget = (function() { // constructor
-
   let App = function(category, amount) {
       this.category = category;
       this.amount = amount;
