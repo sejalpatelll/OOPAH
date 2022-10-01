@@ -4,6 +4,47 @@ import MoneyInput from './MoneyInput';
 import PIChart from './PIChart'
 
 function App() {
+
+    let yoMama = function(category, amount) {
+        this.category = category;
+        this.amount = amount;
+        this.piChart = -1; // -1= does not exist
+   };
+
+    // creating a calculator to add expenses and income added by a user and display the total
+    const calculator = function(income, expenses, total) {
+      income = 0;
+      expenses = 0;
+      // let category = "";
+      total = 0;
+      let addIncome = function() {
+        income += income;
+      }
+      let addExpenses = function() {
+        expenses += expenses;
+      }
+      let addTotal = function() {
+        total = income - expenses;
+      }
+      return {
+        addIncome,
+        addExpenses,
+        addTotal
+      }
+    };
+
+
+    // create a function that adds and sets a categories to the expense 
+    const addCategory = function(category) {
+      category = "";
+      let addCategory = function() {
+        category = category;
+      }
+      return {
+        addCategory
+      }
+    };
+  
   return (
     <div className="App">
 
@@ -20,55 +61,8 @@ function App() {
 
     </div>
   );
+
 }
 
 export default App;
-
-let budget = (function() { // constructor
-
-  let App = function(category, amount) {
-      this.category = category;
-      this.amount = amount;
-      this.piChart = -1; // -1= does not exist
-  };
-
-// creating a calculator to add expenses and income added by a user and display the total
-const calculator = function(income, expenses, total) {
-  let income = 0;
-  let expenses = 0;
-  // let category = "";
-  let total = 0;
-  let addIncome = function() {
-    income += income;
-  }
-  let addExpenses = function() {
-    expenses += expenses;
-  }
-  let addTotal = function() {
-    total = income - expenses;
-  }
-  return {
-    addIncome,
-    addExpenses,
-    addTotal
-  }
-}
-
-
-// create a function that adds and sets a categories to the expense 
-const addCategory = function(category) {
-  let category = "";
-  let addCategory = function() {
-    category = category;
-  }
-  return {
-    addCategory
-  }
-}
-
 // creating a dropdown toggle and an amount box to add categories to the expenses
-
-
-
-
-
