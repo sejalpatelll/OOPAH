@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/OOPAH/static/css/main.073c9b0a.css",
+    "main.js": "/OOPAH/static/js/main.491447fd.js",
+    "static/js/787.28cb0dcd.chunk.js": "/OOPAH/static/js/787.28cb0dcd.chunk.js",
+    "static/media/logo.svg": "/OOPAH/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/OOPAH/index.html",
+    "main.073c9b0a.css.map": "/OOPAH/static/css/main.073c9b0a.css.map",
+    "main.491447fd.js.map": "/OOPAH/static/js/main.491447fd.js.map",
+    "787.28cb0dcd.chunk.js.map": "/OOPAH/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.491447fd.js"
+  ]
+}
