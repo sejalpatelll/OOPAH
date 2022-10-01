@@ -7,13 +7,25 @@
 }
 
 
-.App-header {
+/* .App-header {
   background-color: #27cf40;
   display: block;
   font-size: 3rem;
   color: rgb(255, 255, 255);
   padding: 0.75rem 0;
+} */
+
+.navbar-custom{
+  background-color: #27cf40;
+  font-weight: 700;
+  margin-bottom: 3rem;
 }
+
+#nav-text {
+  color: #fff;
+  font-size: 2rem;
+}
+
 
 .data-display{
   display: flex;
@@ -21,10 +33,84 @@
 }
 
 
-.pi-chart{
-  height: 300px;
-  width: 300px;
+.pie-chart {
+  background:
+      radial-gradient(
+          circle closest-side,
+          white 0,
+          white 53.82%,
+          transparent 53.82%,
+          transparent 69%,
+          white 0
+      ),
+
+      conic-gradient(
+          from 11deg,
+          #4e79a7 0,
+          #4e79a7 20%,
+          #f28e2c 0,
+          #f28e2c 40%,
+          #e15759 0,
+          #e15759 77%,
+          #76b7b2 0,
+          #76b7b2 87%,
+          #59a14f 0,
+          #59a14f 93%,
+          #edc949 0,
+          #edc949 100%
+  );
+  position: relative;
+  width: 500px;
+  min-height: 350px;
+  margin: 0;
+  outline: 1px solid #ccc;
+}
+
+.pie-chart h2 {
+  position: absolute;
+  margin: 1rem;
+}
+
+.pie-chart cite {
+  position: absolute;
+  bottom: 0;
+  font-size: 80%;
+  padding: 1rem;
+  color: gray;
+}
+
+.pie-chart figcaption {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  font-size: smaller;
+  text-align: right;
+}
+
+.pie-chart span:after {
+  display: inline-block;
+  content: "";
+  width: 0.8em;
+  height: 0.8em;
+  margin-left: 0.4em;
+  height: 0.8em;
+  border-radius: 0.2em;
+  background: currentColor;
 }
 
 .money-input{
+}
+
+.money-input p{
+  font-size: 2rem;
+  font-weight: 600;
+  color: #27cf40;
+}
+
+.money-input input{
+  border: .5rem black;
+}
+
+#income-form{
+  margin-bottom: 2rem;
 }
